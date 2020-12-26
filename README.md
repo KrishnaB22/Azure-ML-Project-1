@@ -25,4 +25,4 @@ This policy will terminate runs whose primary metric is not within the specified
 By using this policy we could improve the computational efficiency.<br>
 The best model obtained is saved.<br>
 <br>
-The acccuracy obtained in hperdrive model is 91.1%.
+The acccuracy obtained in hyperdrive model is 91.1%.
