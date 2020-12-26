@@ -13,11 +13,16 @@ Next, using Automated Machine Learning(AutoML) an optimal model is determined. W
 The best model was AutoML which gave an accuracy of 91.5%.
 
 ## Scikit-learn Pipeline
-The train.py file is used as script. Then the Bank Marketing dataset is loaded using the URL provided. 
-The dataset is split into train(90%) and test(10%) data. 
+The train.py file is used as script. Then the Bank Marketing dataset is loaded using the URL provided.<br>
+The dataset is split into train(90%) and test(10%) data.<br>
 After that, the Logistic Regression Model was used for training the dataset based on hyperparameters such as 'Inverse of Regularization Strength' and 'Maximum number of iterations to converge'.<br>
-
+<br>
+The sampling method used is RandomSampling. It supports both discrete and continuous values. It supports early termination of low-performance runs. In Random Sampling, the values are selected randomly from a defined search space.<br>
+<br>
 The early stopping policy used is Bandit Policy<br>
 Bandit Policy is based on slack factor/slack amount and evaluation interval.<br>
 This policy will terminate runs whose primary metric is not within the specified slac factor/slack amount.<br>
 By using this policy we could improve the computational efficiency.<br>
+The best model obtained is saved.<br>
+<br>
+The acccuracy obtained in hperdrive model is 91.1%.
