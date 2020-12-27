@@ -35,7 +35,8 @@ The acccuracy obtained in hyperdrive model is 91.1%.<br>
 
 Automated Machine Learning, often referred to as AutoML is the process of automating the entire Machine Learning pipeline.<br>
 The AutoMLConfig class is used specify paramters such as <i>experiment_timeout_minutes, task,primary_metric, training_data, label_column_name, n_cross_validations</i>.<br>
-The best model obtained through AutoML is VotingEnsemble.
+Automated machine learning supports ensemble models, which are enabled by default. Ensemble learning improves machine learning results and predictive performance by combining multiple models as opposed to using single models.<br>
+The best model obtained through AutoML is VotingEnsemble. Voting Ensemble predicts based on the weighted average of predicted class probabilities (for classification tasks) or predicted regression targets (for regression tasks).<br>
 The value of AUC weighted was 0.94779, recall_score_macro was 0.7689, precision_score_macro was 0.797713. The value of hyperparamaters for VotingEnsemble were max_iter = 1000, n_jobs =1, power_t = 0.222222, tol=0.0001.<br>
 It had an accuracy of 91.5%.<br><br>
 
