@@ -11,6 +11,7 @@ We were provided with a custom coded model-a sci-kit learn Logistic Regression.<
 At first, the hyperparameters are tuned using the tool Hyperdrive. We save the best model obtained through this.<br>
 Next, using Automated Machine Learning(AutoML) an optimal model is determined. We then compare both the results and find out which method gives better results.<br> 
 The best model was AutoML which gave an accuracy of 91.5%.<br><br>
+<img src ='screenshots/block_diagram.png'><br><br>
 
 ## Scikit-learn Pipeline
 The train.py file is used as script. Then the Bank Marketing dataset is loaded using the URL provided.<br>
@@ -34,7 +35,9 @@ The acccuracy obtained in hyperdrive model is 91.1%.<br>
 
 Automated Machine Learning, often referred to as AutoML is the process of automating the entire Machine Learning pipeline.<br>
 The AutoMLConfig class is used specify paramters such as <i>experiment_timeout_minutes, task,primary_metric, training_data, label_column_name, n_cross_validations</i>.<br>
-The best model obtained through AutoML is VotingEnsemble. It had an accuracy of 91.5%.<br><br>
+The best model obtained through AutoML is VotingEnsemble.
+The value of AUC weighted was 0.94779, recall_score_macro was 0.7689, precision_score_macro was 0.797713. The value of hyperparamaters for VotingEnsemble were max_iter = 1000, n_jobs =1, power_t = 0.222222, tol=0.0001.<br>
+It had an accuracy of 91.5%.<br><br>
 
 Classification report<br><br>
 <img src ='screenshots/automl classification.png'><br><br>
