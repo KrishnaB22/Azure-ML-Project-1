@@ -25,4 +25,17 @@ This policy will terminate runs whose primary metric is not within the specified
 By using this policy we could improve the computational efficiency.<br>
 The best model obtained is saved.<br>
 <br>
-The acccuracy obtained in hyperdrive model is 91.1%.
+The acccuracy obtained in hyperdrive model is 91.1%.<br>
+<br>
+
+<img src ='screenshots/hyperdrive accuracy.png'>
+
+## Auto-ML
+
+Automated Machine Learning, often referred to as AutoML is the process of automating the entire Machine Learning pipeline.<br>
+The AutoMLConfig class is used specify paramters such as <i>experiment_timeout_minutes, task,primary_metric, training_data, label_column_name, n_cross_validations</i>.<br>
+The best model obtained through AutoML is VotingEnsemble. It had an accuracy of 91.5%.<br><br>
+
+Classification report<br><br>
+<img src ='screenshots/automl classification.png'>
+
